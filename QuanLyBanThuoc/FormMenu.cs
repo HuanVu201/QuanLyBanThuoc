@@ -18,11 +18,6 @@ namespace QuanLyBanThuoc
             InitializeComponent();
         }
 
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormMenu_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
