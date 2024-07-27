@@ -16,6 +16,7 @@ namespace QuanLyBanThuoc
         public FormMenu()
         {
             InitializeComponent();
+            this.Size = new Size(1300, 620);
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -28,6 +29,13 @@ namespace QuanLyBanThuoc
             QuanLyNV quanLyNV = new QuanLyNV();
             quanLyNV.MdiParent = this;
             quanLyNV.Show();
+        }
+
+        private void quảnLýDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyThuoc quanLyThuoc = new QuanLyThuoc();
+            quanLyThuoc.MdiParent = this;
+            quanLyThuoc.Show();
         }
     }
 }
