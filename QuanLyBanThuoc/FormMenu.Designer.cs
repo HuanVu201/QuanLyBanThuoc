@@ -35,6 +35,7 @@
             this.quảnLýDịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngKýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quanLyThuocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formNhânViênToolStripMenuItem,
             this.quảnLýKháchHàngToolStripMenuItem,
-            this.quảnLýDịchVụToolStripMenuItem});
+            this.quảnLýDịchVụToolStripMenuItem,
+            this.quanLyThuocToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.menuToolStripMenuItem.Text = "Menu";
@@ -93,6 +95,12 @@
             this.đăngKýToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.đăngKýToolStripMenuItem.Text = "Đăng ký";
             // 
+            // quanLyThuocToolStripMenuItem
+            // 
+            this.quanLyThuocToolStripMenuItem.Name = "quanLyThuocToolStripMenuItem";
+            this.quanLyThuocToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quanLyThuocToolStripMenuItem.Text = "Quan ly thuoc";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -119,5 +127,6 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLýDịchVụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngKýToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quanLyThuocToolStripMenuItem;
     }
 }
