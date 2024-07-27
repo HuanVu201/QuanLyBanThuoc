@@ -19,11 +19,6 @@ namespace QuanLyBanThuoc
             this.Size = new Size(1300, 620);
         }
 
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormMenu_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
