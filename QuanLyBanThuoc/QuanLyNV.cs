@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using QuanLyBanThuoc;
+
 
 namespace BTH3
 {
@@ -18,6 +20,7 @@ namespace BTH3
         string connectionString = ConfigurationManager.ConnectionStrings["QuanlyThuoc"].ConnectionString;
         ErrorProvider errorProvider = new ErrorProvider();
         DataView dv = new DataView();
+        private string reportFilter;
         public QuanLyNV()
         {
             InitializeComponent();
@@ -49,7 +52,7 @@ namespace BTH3
                                 if (dt.Rows.Count > 0)
                                 {
                                     dv = dt.DefaultView;
-                                    dgv_tblNV.AutoGenerateColumns = false;
+                                    dgv_tblNV.AutoGenerateColumns = true;
                                     dgv_tblNV.DataSource = dv;
                                 }
                                 else
@@ -400,6 +403,28 @@ namespace BTH3
             //        MessageBox.Show("Vui lòng chọn mã bệnh nhân.");
             //    }
             //}
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_inDSNV_Click(object sender, EventArgs e)
+        {
+            //string reportFilter = "NOT(ISNULL({Select_tblNhanVien.sMaNV}))";
+            //if (!string.IsNullOrEmpty(tb_manv.Text))
+            //{
+            //    reportFilter += string.Format(" AND {0} LIKE '*{1}*'", "{Select_tblNhanVien.sMaNV}", tb_manv.Text);
+            //}
+            //if (!string.IsNullOrEmpty(tb_hoten.Text))
+            //{
+            //    reportFilter += string.Format(" AND {0} LIKE '*{1}*'", "{Select_tblNhanVien.sTenNV}", tb_hoten.Text);
+            //}
+
+            FormInDSNV formInDSNV = new FormInDSNV();
+            formInDSNV.Show();
+            formInDSNV.ShowReport("DSNV.rpt", "Select_tblNhanVien", null);
         }
     }
 }
