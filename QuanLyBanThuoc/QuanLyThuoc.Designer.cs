@@ -282,6 +282,7 @@
             this.dgv_tblThuoc.Size = new System.Drawing.Size(826, 421);
             this.dgv_tblThuoc.TabIndex = 5;
             this.dgv_tblThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_tblThuoc_CellContentClick);
+            this.dgv_tblThuoc.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgv_tblThuoc_MouseDown);
             // 
             // groupBox1
             // 

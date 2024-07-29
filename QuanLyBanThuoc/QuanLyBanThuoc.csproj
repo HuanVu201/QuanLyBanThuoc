@@ -56,6 +56,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao\CTHDN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CTHDN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao\CTHDN_NCC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CTHDN_NCC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao\DSCTHDN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCTHDN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BaoCao\DSNV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +85,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSThuoc.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao\HDNhap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HDNhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChiTietHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHoaDonNhap.Designer.cs">
+      <DependentUpon>ChiTietHoaDonNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInDSNV.cs">
       <SubType>Form</SubType>
@@ -80,11 +110,29 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonNhap.Designer.cs">
+      <DependentUpon>HoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InCTHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InCTHDN.Designer.cs">
+      <DependentUpon>InCTHDN.cs</DependentUpon>
+    </Compile>
     <Compile Include="InDSThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InDSThuoc.Designer.cs">
       <DependentUpon>InDSThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHDN.Designer.cs">
+      <DependentUpon>InHDN.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyNV.cs">
       <SubType>Form</SubType>
@@ -100,6 +148,30 @@
     <Compile Include="QuanLyThuoc.Designer.cs">
       <DependentUpon>QuanLyThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanlyThuocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlyThuocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.cs" />
+    <Compile Include="FormTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimKiem.Designer.cs">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao\CTHDN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CTHDN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\CTHDN_NCC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CTHDN_NCC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\DSCTHDN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSCTHDN.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\DSNV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSNV.cs</LastGenOutput>
@@ -108,11 +180,27 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSThuoc.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\HDNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HDNhap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietHoaDonNhap.resx">
+      <DependentUpon>ChiTietHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonNhap.resx">
+      <DependentUpon>HoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InCTHDN.resx">
+      <DependentUpon>InCTHDN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InDSThuoc.resx">
       <DependentUpon>InDSThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHDN.resx">
+      <DependentUpon>InHDN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNV.resx">
       <DependentUpon>QuanLyNV.cs</DependentUpon>
@@ -126,6 +214,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormTimKiem.resx">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyThuoc.resx">
+      <DependentUpon>QuanLyThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +230,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanlyThuocDataSet.xsc">
+      <DependentUpon>QuanlyThuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyThuocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlyThuocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlyThuocDataSet.xss">
+      <DependentUpon>QuanlyThuocDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

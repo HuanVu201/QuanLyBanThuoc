@@ -15,7 +15,7 @@ using QuanLyBanThuoc;
 
 namespace BTH3
 {
-    public partial class QuanLyNV : Form/*,IXuLyDuLieu*/
+    public partial class QuanLyNV : Form,TimKiem
     {
         string connectionString = ConfigurationManager.ConnectionStrings["QuanlyThuoc"].ConnectionString;
         ErrorProvider errorProvider = new ErrorProvider();
@@ -425,6 +425,34 @@ namespace BTH3
             FormInDSNV formInDSNV = new FormInDSNV();
             formInDSNV.Show();
             formInDSNV.ShowReport("DSNV.rpt", "Select_tblNhanVien", null);
+        }
+
+        private void dgv_tblNV_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                var hitTestInfo = dgv_tblNV.HitTest(e.X, e.Y);
+                if (hitTestInfo.Type == DataGridViewHitTestType.ColumnHeader)
+                {
+                    // Lấy tên cột được nhấp
+                    string columnName = dgv_tblNV.Columns[hitTestInfo.ColumnIndex].HeaderText;
+
+                    // Mở form tìm kiếm và truyền tên cột
+                    FormTimKiem timKiemNV = new FormTimKiem();
+                    timKiemNV.Initialize(columnName, this); // Truyền columnName và interface
+                    timKiemNV.ShowDialog();
+                }
+            }
+        }
+        public void SearchInDataGridView(string columnName, string searchValue)
+        {
+            dv.RowFilter = $"{columnName} LIKE '%{searchValue}%'";
+            dgv_tblNV.DataSource = dv;
+
+            if (dv.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy giá trị.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

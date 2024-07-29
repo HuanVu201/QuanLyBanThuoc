@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace QuanLyBanThuoc
 {
-    public partial class QuanLyThuoc : Form
+    public partial class QuanLyThuoc : Form, TimKiem
     {
         string connectionString = ConfigurationManager.ConnectionStrings["QuanlyThuoc"].ConnectionString;
         ErrorProvider errorProvider = new ErrorProvider();
@@ -307,6 +307,7 @@ namespace QuanLyBanThuoc
             tb_gbl.Text = "";
             dgv_tblThuoc.ClearSelection();
             LoadData();
+            btn_them.Enabled = true;
         }
 
         private void tb_mathuoc_Validating(object sender, CancelEventArgs e)
@@ -369,5 +370,33 @@ namespace QuanLyBanThuoc
             inDSThuoc.Show();
             inDSThuoc.ShowReportThuoc("DSThuoc.rpt", "Select_TongHopThuoc", null);
         }
+
+        public void SearchInDataGridView(string columnName, string searchValue)
+        {
+            dv.RowFilter = $"{columnName} LIKE '%{searchValue}%'";
+            dgv_tblThuoc.DataSource = dv;
+
+            if (dv.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy giá trị.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void dgv_tblThuoc_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                var hitTestInfo = dgv_tblThuoc.HitTest(e.X, e.Y);
+                if (hitTestInfo.Type == DataGridViewHitTestType.ColumnHeader)
+                {
+                    string columnName = dgv_tblThuoc.Columns[hitTestInfo.ColumnIndex].HeaderText;
+
+                    // Tạo form tìm kiếm và truyền tham số cột
+                    FormTimKiem timKiemThuoc = new FormTimKiem();
+                    timKiemThuoc.Initialize(columnName, this); // Truyền columnName và interface
+                    timKiemThuoc.ShowDialog();
+                }
+            }
+        }
+
     }
 }
