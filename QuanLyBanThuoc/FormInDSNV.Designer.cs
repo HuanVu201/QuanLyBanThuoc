@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.dsnv1 = new QuanLyBanThuoc.BaoCao.DSNV();
+            this.crystalReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
+            // 
+            // dsnv1
+            // 
+            this.dsnv1.InitReport += new System.EventHandler(this.dsnv1_InitReport);
             // 
             // crystalReportViewer
             // 
@@ -41,12 +45,8 @@
             this.crystalReportViewer.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer.Name = "crystalReportViewer";
             this.crystalReportViewer.Size = new System.Drawing.Size(800, 450);
-            this.crystalReportViewer.TabIndex = 0;
+            this.crystalReportViewer.TabIndex = 1;
             this.crystalReportViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
-            // dsnv1
-            // 
-            this.dsnv1.InitReport += new System.EventHandler(this.dsnv1_InitReport);
             // 
             // FormInDSNV
             // 

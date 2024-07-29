@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao\DSKH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSKH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BaoCao\DSNV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSThuoc.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormInDSKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInDSKH.Designer.cs">
+      <DependentUpon>FormInDSKH.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInDSNV.cs">
       <SubType>Form</SubType>
@@ -86,6 +98,12 @@
     <Compile Include="InDSThuoc.Designer.cs">
       <DependentUpon>InDSThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,10 @@
     <Compile Include="QuanLyThuoc.Designer.cs">
       <DependentUpon>QuanLyThuoc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCao\DSKH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSKH.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\DSNV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSNV.cs</LastGenOutput>
@@ -108,11 +130,20 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSThuoc.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInDSKH.resx">
+      <DependentUpon>FormInDSKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInDSNV.resx">
+      <DependentUpon>FormInDSNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InDSThuoc.resx">
       <DependentUpon>InDSThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNV.resx">
       <DependentUpon>QuanLyNV.cs</DependentUpon>
