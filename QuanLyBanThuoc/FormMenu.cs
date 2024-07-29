@@ -37,5 +37,23 @@ namespace QuanLyBanThuoc
             quanLyThuoc.MdiParent = this;
             quanLyThuoc.Show();
         }
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chiTiếtHóaĐơnNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ChiTietHoaDonNhap chiTietHoaDonNhap = new ChiTietHoaDonNhap();
+            chiTietHoaDonNhap.MdiParent = this;
+            chiTietHoaDonNhap.Show();
+        }
+
+        private void hóaĐơnNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            HoaDonNhap hoaDonNhap = new HoaDonNhap();
+            hoaDonNhap.MdiParent = this;
+            hoaDonNhap.Show();
+        }
     }
 }

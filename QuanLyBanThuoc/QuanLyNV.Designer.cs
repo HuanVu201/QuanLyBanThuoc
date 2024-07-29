@@ -43,7 +43,6 @@
             this.rb_nam = new System.Windows.Forms.RadioButton();
             this.rb_nu = new System.Windows.Forms.RadioButton();
             this.dgv_tblNV = new System.Windows.Forms.DataGridView();
-            this.quanlyThuocDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_boqua = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
@@ -54,10 +53,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_inDSNV = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.quanlyThuocDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tblNV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlyThuocDataSetBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanlyThuocDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -193,6 +193,7 @@
             this.dgv_tblNV.TabIndex = 8;
             this.dgv_tblNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_tblNV_CellContentClick);
             this.dgv_tblNV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_tblNV_CellContentDoubleClick);
+            this.dgv_tblNV.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgv_tblNV_MouseDown);
             // 
             // btn_them
             // 
@@ -333,10 +334,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tblNV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlyThuocDataSetBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.quanlyThuocDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
