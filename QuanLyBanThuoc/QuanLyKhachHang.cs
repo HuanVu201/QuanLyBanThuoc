@@ -321,14 +321,14 @@ namespace QuanLyBanThuoc
         {
             string reportFilter = string.Empty;
             //reportFilter = "NOT(ISNULL({GetAllKhachHang.sMaSV}))";
-            //if(!string.IsNullOrEmpty(reportFilter))
+            //if (!string.IsNullOrEmpty(reportFilter))
             //{
 
             //}
 
-            //FormInDSKH formInDSKH = new FormInDSKH();
-            //formInDSKH.Show();
-            //formInDSKH.ShowReport("DSKH.rpt", "GetAllKhachHang", reportFilter);
+            FormInDSKH formInDSKH = new FormInDSKH();
+            formInDSKH.Show();
+            formInDSKH.ShowReport("DSKH.rpt", "GetAllKhachHang", reportFilter);
         }
     }
 }
