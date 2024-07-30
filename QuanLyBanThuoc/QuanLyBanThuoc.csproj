@@ -74,6 +74,12 @@
       <DependentUpon>DSCTHDN.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BaoCao\DSKH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSKH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BaoCao\DSNV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="ChiTietHoaDonNhap.Designer.cs">
       <DependentUpon>ChiTietHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInDSKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInDSKH.Designer.cs">
+      <DependentUpon>FormInDSKH.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInDSNV.cs">
       <SubType>Form</SubType>
@@ -134,6 +146,12 @@
     <Compile Include="InHDN.Designer.cs">
       <DependentUpon>InHDN.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachHang.Designer.cs">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +170,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanlyThuocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyXuatHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyXuatHoaDon.Designer.cs">
+      <DependentUpon>QuanLyXuatHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="TimKiem.cs" />
     <Compile Include="FormTimKiem.cs">
@@ -172,6 +196,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSCTHDN.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\DSKH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSKH.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\DSNV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DSNV.cs</LastGenOutput>
@@ -187,6 +215,9 @@
     <EmbeddedResource Include="ChiTietHoaDonNhap.resx">
       <DependentUpon>ChiTietHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInDSKH.resx">
+      <DependentUpon>FormInDSKH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InHDN.resx">
       <DependentUpon>InHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKhachHang.resx">
+      <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyNV.resx">
       <DependentUpon>QuanLyNV.cs</DependentUpon>
