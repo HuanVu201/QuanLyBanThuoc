@@ -847,5 +847,26 @@ namespace QuanLyBanThuoc
             }
 
         }
+
+        private void btn_inHoaDon_Click(object sender, EventArgs e)
+        {
+            string reportFilter = string.Empty;
+            //reportFilter = "NOT(ISNULL({GetAllKhachHang.sMaSV}))";
+            //if(!string.IsNullOrEmpty(reportFilter))
+            //{
+
+            //}
+            if (!string.IsNullOrEmpty(tb_soHoaDon.Text))
+            {
+                FormInHoaDon formInHD = new FormInHoaDon();
+                formInHD.Show();
+                formInHD.ShowReport("HoaDonXuat.rpt", "XuatHoaDonBySoHD", tb_soHoaDon.Text);
+            }
+            else
+            {
+                MessageBox.Show("Không có thông tin hóa đơn cần xuất!");
+                errorProvider.SetError(tb_soHoaDon, "Nhập số hóa đơn");
+            }
+        }
     }
 }

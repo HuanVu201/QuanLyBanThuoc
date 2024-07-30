@@ -39,7 +39,7 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.tb_ngayBan = new System.Windows.Forms.MaskedTextBox();
-            this.btn_inDSNV = new System.Windows.Forms.Button();
+            this.btn_inHoaDon = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.btn_xoaHD = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -93,7 +93,7 @@
             this.groupBox.Controls.Add(this.btn_them);
             this.groupBox.Controls.Add(this.label16);
             this.groupBox.Controls.Add(this.tb_ngayBan);
-            this.groupBox.Controls.Add(this.btn_inDSNV);
+            this.groupBox.Controls.Add(this.btn_inHoaDon);
             this.groupBox.Controls.Add(this.label15);
             this.groupBox.Controls.Add(this.btn_xoaHD);
             this.groupBox.Controls.Add(this.label14);
@@ -230,14 +230,15 @@
             this.tb_ngayBan.TabIndex = 52;
             this.tb_ngayBan.ValidatingType = typeof(System.DateTime);
             // 
-            // btn_inDSNV
+            // btn_inHoaDon
             // 
-            this.btn_inDSNV.Location = new System.Drawing.Point(672, 381);
-            this.btn_inDSNV.Name = "btn_inDSNV";
-            this.btn_inDSNV.Size = new System.Drawing.Size(90, 50);
-            this.btn_inDSNV.TabIndex = 33;
-            this.btn_inDSNV.Text = "In DSKH";
-            this.btn_inDSNV.UseVisualStyleBackColor = true;
+            this.btn_inHoaDon.Location = new System.Drawing.Point(672, 381);
+            this.btn_inHoaDon.Name = "btn_inHoaDon";
+            this.btn_inHoaDon.Size = new System.Drawing.Size(90, 50);
+            this.btn_inHoaDon.TabIndex = 33;
+            this.btn_inHoaDon.Text = "In hóa đơn";
+            this.btn_inHoaDon.UseVisualStyleBackColor = true;
+            this.btn_inHoaDon.Click += new System.EventHandler(this.btn_inHoaDon_Click);
             // 
             // label15
             // 
@@ -607,7 +608,7 @@
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.MaskedTextBox tb_ngayBan;
-        private System.Windows.Forms.Button btn_inDSNV;
+        private System.Windows.Forms.Button btn_inHoaDon;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btn_xoaHD;
         private System.Windows.Forms.Label label14;
