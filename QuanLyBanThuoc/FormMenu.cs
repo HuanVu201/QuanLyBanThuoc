@@ -69,5 +69,47 @@ namespace QuanLyBanThuoc
             quanLyHD.MdiParent = this;
             quanLyHD.Show();
         }
+
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyNV quanLyNV = new QuanLyNV();
+            quanLyNV.MdiParent = this;
+            quanLyNV.Show();
+        }
+
+        private void quảnLýKháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            QuanLyKhachHang quanLyKH = new QuanLyKhachHang();
+            quanLyKH.MdiParent = this;
+            quanLyKH.Show();
+        }
+
+        private void quảnLýThuốcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyThuoc quanLyThuoc = new QuanLyThuoc();
+            quanLyThuoc.MdiParent = this;
+            quanLyThuoc.Show();
+        }
+
+        private void chiTiếtHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChiTietHoaDonNhap chiTietHoaDonNhap = new ChiTietHoaDonNhap();
+            chiTietHoaDonNhap.MdiParent = this;
+            chiTietHoaDonNhap.Show();
+        }
+
+        private void hóaĐơnNhậpToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            HoaDonNhap hoaDonNhap = new HoaDonNhap();
+            hoaDonNhap.MdiParent = this;
+            hoaDonNhap.Show();
+        }
+
+        private void tạoHóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyXuatHoaDon quanLyHD = new QuanLyXuatHoaDon();
+            quanLyHD.MdiParent = this;
+            quanLyHD.Show();
+        }
     }
 }
