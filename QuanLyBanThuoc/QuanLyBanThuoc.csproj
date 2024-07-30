@@ -254,6 +254,9 @@
     <EmbeddedResource Include="QuanLyThuoc.resx">
       <DependentUpon>QuanLyThuoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyXuatHoaDon.resx">
+      <DependentUpon>QuanLyXuatHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
