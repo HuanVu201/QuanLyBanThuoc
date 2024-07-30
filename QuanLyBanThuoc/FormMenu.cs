@@ -55,5 +55,19 @@ namespace QuanLyBanThuoc
             hoaDonNhap.MdiParent = this;
             hoaDonNhap.Show();
         }
+
+        private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyKhachHang quanLyKH = new QuanLyKhachHang();
+            quanLyKH.MdiParent = this;
+            quanLyKH.Show();
+        }
+
+        private void xuấtHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyXuatHoaDon quanLyHD = new QuanLyXuatHoaDon();
+            quanLyHD.MdiParent = this;
+            quanLyHD.Show();
+        }
     }
 }
